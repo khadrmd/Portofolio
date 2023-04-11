@@ -10,7 +10,7 @@
   </head>
   <body>
     <div class="div_header">
-      <a class="div_header" href=""><h1>Welcome to My Website</h1></a>
+      <a class="div_header" href="./index.html"><h1>Welcome to My Website</h1></a>
     </div>
     <div class="nav_bar">
       <ul>
@@ -19,9 +19,91 @@
         <li><a href="#">Contact</a></li>
       </ul>
     </div>
+    <p>The name's Bond, <span>James Bond</span></p>
     <main>
-      <h2>About Me</h2>
-      <p>{%ABOUT_ME%}</p>
+      <h2 style="color: aqua">
+        <b>About</b>
+        <hr />
+        <i>Me</i>
+        <br />
+        <sub>Hello</sub><sup>there</sup>
+      </h2>
+      <p>{%ABOUT_ME%}<hr></p>
+      <h2>Favourite fruits:</h2>
+      <ol type="I"> <!--type="1","a","A", "i", "I"-->
+        <li>Durian</li>
+        <li>Jeruk</li>
+      </ol>
+      <table>
+        <tr>
+          <th>Name</th>
+          <th>Age</th>
+          <th>Title 3</th>
+          <th>Title 4</th>
+          <th>Title 5</th>
+          <th>Title 6</th>
+        </tr>
+        <tr>
+          <td>Khaidir Mauladan</td>
+          <td>22</td>
+          <td>Male</td>
+          <td colspan="2"><center>Merged column</center></td>
+        </tr>
+        <tr>
+          <td rowspan="2">Merged row</td>
+          <td>Agus</td>
+        </tr>
+        <tr>
+          <td>Adi</td>
+        </tr>
+        <tr><td colspan="6">Gusdur</td></tr>
+        <tr>
+          <td>
+            <img src="buff doggo.png" alt="Buff Doggo cannot be load" width="200", height="100">
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <a href="https://www.google.com/">Google</a>
+            <!--
+              Absole link  = internet URL
+              Relative link = Other page of own website
+            -->
+          </td>
+        </tr>
+      </table><hr>
+      <h2><b>Login</b></h2>
+      <form action="" method="post">
+        <label for="username">Username:</label>
+        <input id="username" type="text"><br>
+        <label for="password">Password:</label>
+        <input id="password" type="password" required><br>
+        <button type="submit">Login</button>
+      </form><hr>
+      <button type="button" >BIG BUTTON</button><br>
+      <p>Drink size:</p>
+      <select>
+        <option selected>Size</option>
+        <option>Small</option>
+        <option>Medium</option>
+        <option>Large</option>
+      </select><br>
+      <p>Drink:</p>
+      <select>
+        <option selected>Drink</option>
+        <optgroup label="Juice">
+          <option>Apple Juice</option>
+          <option>Orange Juice</option>
+        </optgroup>
+        <optgroup label="Soft Drink">
+          <option>Fanta</option>
+          <option>Balsem</option>
+        </optgroup>
+      </select><br>
+      <input type="radio" id="dineIn" name="orderType" value="dineIn">
+      <label for="dineIn">Dine-In</label>
+      <input type="radio" id="takeaway" name="orderType" value="takeaway">
+      <label for="takeaway">Takeaway</label>
     </main>
     <footer>
       <p>&copy; 2023 My Website</p>
