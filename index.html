@@ -2,112 +2,71 @@
 <html>
   <head>
     <title>Work in Progress</title>
-    <link rel="stylesheet" type="text/css" href="style.css" />
     <link
-      href="https://fonts.googleapis.com/css2?family=Josefin+Sans&family=Source+Code+Pro:wght@300&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Nunito&family=Poppins:wght@100;500&display=swap"
       rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./styles/index.css" type="text/css" />
+
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.15.1/devicon.min.css"
     />
   </head>
   <body>
-    <div class="div_header">
-      <a class="div_header" href="./index.html"><h1>Welcome to My Website</h1></a>
-    </div>
-    <div class="nav_bar">
-      <ul>
-        <li><a href="#">Home</a></li>
-        <li><a href="#">About</a></li>
-        <li><a href="#">Contact</a></li>
-      </ul>
-    </div>
-    <p>The name's Bond, <span>James Bond</span></p>
+    <header>
+      <nav>
+        <ul>
+          <li>
+            <a href="#">Home</a>
+          </li>
+          <li>
+            <a href="#">About Me</a>
+          </li>
+          <li>
+            <a href="#">My Projects</a>
+          </li>
+          <li>
+            <a href="#">Contact Me</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
     <main>
-      <h2 style="color: aqua">
-        <b>About</b>
-        <hr />
-        <i>Me</i>
-        <br />
-        <sub>Hello</sub><sup>there</sup>
-      </h2>
-      <p>{%ABOUT_ME%}<hr></p>
-      <h2>Favourite fruits:</h2>
-      <ol type="I"> <!--type="1","a","A", "i", "I"-->
-        <li>Durian</li>
-        <li>Jeruk</li>
-      </ol>
-      <table>
-        <tr>
-          <th>Name</th>
-          <th>Age</th>
-          <th>Title 3</th>
-          <th>Title 4</th>
-          <th>Title 5</th>
-          <th>Title 6</th>
-        </tr>
-        <tr>
-          <td>Khaidir Mauladan</td>
-          <td>22</td>
-          <td>Male</td>
-          <td colspan="2"><center>Merged column</center></td>
-        </tr>
-        <tr>
-          <td rowspan="2">Merged row</td>
-          <td>Agus</td>
-        </tr>
-        <tr>
-          <td>Adi</td>
-        </tr>
-        <tr><td colspan="6">Gusdur</td></tr>
-        <tr>
-          <td>
-            <img src="buff doggo.png" alt="Buff Doggo cannot be load" width="200", height="100">
-          </td>
-        </tr>
-        <tr>
-          <td>
-            <a href="https://www.google.com/" target="_blank">Google</a>
-            <!--
-              Absole link  = internet URL
-              Relative link = Other page of own website
-            -->
-          </td>
-        </tr>
-      </table><hr>
-      <h2><b>Login</b></h2>
-      <form action="" method="post">
-        <label for="username">Username:</label>
-        <input id="username" type="text"><br>
-        <label for="password">Password:</label>
-        <input id="password" type="password" required><br>
-        <button type="submit">Login</button>
-      </form><hr>
-      <button type="button" >BIG BUTTON</button><br>
-      <p>Drink size:</p>
-      <select>
-        <option selected>Size</option>
-        <option>Small</option>
-        <option>Medium</option>
-        <option>Large</option>
-      </select><br>
-      <p>Drink:</p>
-      <select>
-        <option selected>Drink</option>
-        <optgroup label="Juice">
-          <option>Apple Juice</option>
-          <option>Orange Juice</option>
-        </optgroup>
-        <optgroup label="Soft Drink">
-          <option>Fanta</option>
-          <option>Balsem</option>
-        </optgroup>
-      </select><br>
-      <input type="radio" id="dineIn" name="orderType" value="dineIn">
-      <label for="dineIn">Dine-In</label>
-      <input type="radio" id="takeaway" name="orderType" value="takeaway">
-      <label for="takeaway">Takeaway</label>
+      <section class="welcome-section">
+        <div class="container">
+          <p>
+            Hi there! <br />
+            I'm <span id="name">Khaidir</span>
+          </p>
+          <div class="fade"></div>
+          <img
+            src="./img/AZR08843.png"
+            alt="Profile Image"
+            id="profile-image"
+          />
+        </div>
+      </section>
+      <section class="content-section">
+        <div class="container">
+          <i class="devicon-css3-plain colored"></i>
+
+          <i class="devicon-html5-plain colored"></i>
+
+          <i class="devicon-javascript-plain colored"></i>
+
+          <i class="devicon-nodejs-plain colored"></i>
+
+          <i class="devicon-mongodb-plain colored"></i>
+
+          <i class="devicon-mysql-plain colored"></i>
+
+          <i class="devicon-unity-original"></i>
+        </div>
+      </section>
     </main>
     <footer>
-      <p>&copy; 2023 My Website</p>
+      <p>&copy;2023 Created by Khaidir Mauladan</p>
     </footer>
-    <script src="script.js"></script>
   </body>
 </html>
